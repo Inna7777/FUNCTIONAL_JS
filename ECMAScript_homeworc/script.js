@@ -5,7 +5,7 @@
 Подсказка, с последовательностью действий:
 getUserData использует fetch для получения данных о пользователе с удаленного сервера. Если запрос успешен (с кодом 200), функция извлекает данные из ответа с помощью response.json() и возвращает объект с данными о пользователе. Если запрос неуспешен, функция отклоняет промис с сообщением об ошибке.*/
 
-async function getUserData(ID) {
+function getUserData(ID) {
   return fetch(`https://jsonplaceholder.typicode.com/users/${ID}`)
     .then((response) => {
       if (response.status != 200) {
