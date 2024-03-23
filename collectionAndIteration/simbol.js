@@ -4,6 +4,7 @@ const dogID = Symbol("dog"); //При каждом создании символ
 
 const dog1 = Symbol("dog");
 const dog2 = Symbol("dog");
+console.log(dog1);
 
 console.log(dog1 === dog2); //false
 
